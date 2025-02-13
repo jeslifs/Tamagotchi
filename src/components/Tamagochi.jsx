@@ -4,11 +4,12 @@ import * as THREE from 'three'
 
 const materialChain = new THREE.MeshBasicMaterial({color:'#92b6e8'})
 const materialScreen = new THREE.MeshBasicMaterial({color:'#000000'})
-export default function Amagochi({position, chain}) {
 
-  const baked = useTexture('./amagochi.jpg')
+export default function Tamagochi({position, chain}) {
+
+  const baked = useTexture('./tamagochi.jpg')
   baked.flipY = false
-  const { nodes, materials } = useGLTF('./amagochi.glb')
+  const { nodes, materials } = useGLTF('./tamagochi.glb')
 
   return (
     <group position = { position } dispose={null}>
@@ -87,4 +88,4 @@ export default function Amagochi({position, chain}) {
   )
 }
 
-useGLTF.preload('./amagochi.glb')
+useGLTF.preload('./tamagochi.glb')

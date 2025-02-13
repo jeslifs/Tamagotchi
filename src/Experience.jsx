@@ -1,6 +1,6 @@
 import { OrbitControls, Environment } from '@react-three/drei'
 import { Perf } from 'r3f-perf'
-import Amagochi from './components/Amagochi'
+import Tamagochi from './components/Tamagochi'
 import Lights from './components/Lights'
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
 import Pets from './components/Pets'
@@ -59,7 +59,7 @@ export default function Experience()
         <Lights /> 
 
         {/* model */}
-        <Amagochi
+        <Tamagochi
             position = { [ 0 , 0.36, 0 ] }
             chain = { hideChain }
             // rotation = { [-(Math.PI * 0.5), 0, 0] }
